@@ -1,0 +1,285 @@
+@charset "UTF-8"; 
+  @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('./fonts/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Pre';
+    src: url('./fonts/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'MBC1961GulimM';
+    src: url('./fonts/MBC1961GulimM.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Busan';
+    font-style: thin;
+    font-weight: thin;
+    src: url('./fonts/Busan.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'TTT';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/TTTtangsbudaejjigaeB.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'MYY';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/Cafe24Supermagic-Regular-v1.0.woff2') format('woff2');
+  }
+
+  html {
+    background-color: #000000;
+    white-space: nowrap;
+  }
+  body {
+    margin: 0 auto;
+    padding: 0;
+  }
+  @media(min-width: 600px) {
+    body {
+      width: 600px;
+      margin: 0 auto;
+    }
+    .main {
+      height: 65%;
+      width: 100%;
+      background-color: #ffffff;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      display: flex;
+    }
+    .sub {
+      height: 35%;
+      width: 600px;
+      background-color: #0f0f0f;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #head0 {
+      height: 60px;
+    }
+    #head1 {
+      height: 48px;
+      font-size: 48px;
+    }
+    #head2 {
+      height: 96px;
+      font-size: 96px;
+    }
+    #just-container20{
+      height: 18px;
+      width: 6px;
+    }
+    #map-container{
+      height: 420px;
+      margin: 6px 0;
+    }
+    #map{
+      height: 390px;
+    }
+    #body0 {
+      height: 42px;
+      font-size: 18px;
+    }
+    #body1 {
+      height: 48px;
+      font-size: 33px;
+    }
+    #body2 {
+      height: 30px;
+      font-size: 18px;
+    }
+    .container {
+      height: 102px;
+    }
+    .rounded-rectangle {
+    height: 60px;
+    font-size: 30px;
+    }
+    #body3 {
+      height: 30px;
+      font-size: 24px;
+    }
+  }
+  @media(max-width: 600px){
+  .main {
+    height: 65%;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+  }
+  .sub {
+    height: 35%;
+    width: 100%;
+    background-color: #0f0f0f;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    display: flex;
+  }
+  #head0 {
+    height: 10vw;
+  }
+  #head1 {
+    height: 8vw;
+    font-size: 8vw;
+  }
+  #head2 {
+    height: 16vw;
+    font-size: 16vw;
+  }
+  #just-container20{
+    height: 3vw;
+    width: 1vw;
+  }
+  #map-container{
+    height: 70vw;
+    margin: 1vw 0;
+  }
+  #map {
+    height: 65vw;
+  }
+  #body0 {
+    height: 7vw;
+    font-size: 3vw;
+  }
+  #body1 {
+    height: 8vw;
+    font-size: 5.5vw;
+  }
+  #body2 {
+    height: 5vw;
+    font-size: 3vw;
+  }
+  .container {
+    height: 17vw;
+  }
+  .rounded-rectangle {
+  height: 10vw;
+  font-size: 5vw;
+  }
+  #body3 {
+    height: 5vw;
+    font-size: 4vw;
+  }
+}
+  #head0 {
+      display: flex;
+      align-self: center;
+      width: 100%;
+      float: left;
+  }
+  #grid1 {
+    width: 8%;
+  }
+  #grid2 {
+    width: 20%;
+  }
+  #grid3 {
+    width: 42.5%;
+    display: flex;
+    align-items:flex-end;
+  }
+  #head1 {
+    margin-top: 0;
+    letter-spacing: 0.005em;
+    font-family: 'MYY', sans-serif;
+    display: flex;
+    align-items: flex-start;
+  }
+  #head2 {
+    margin-top: 0;
+    letter-spacing: 0.05em;
+    font-family: 'TTT', san-serif;
+    font-weight: normal;
+    color: #ff0000;
+    display: flex;
+    align-items: flex-start;
+  }
+  #map-container{
+    width: 100%;
+    display: flex; /* 세로 정렬을 위한 flex 설정 */
+    align-items: center;
+    justify-content: center;
+  }
+  #map {
+    width: 90%;
+  }
+  #body0 {
+    font-family: 'MBC1961GulimM', serif;
+    font-weight: 20;
+    letter-spacing: 0.05em;
+    color: #000000;
+    text-align: center;
+    align-items:flex-start;
+    display: flex;
+  }
+  #body1 {
+    font-family: 'GmarketSansMedium', serif;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    text-align: center;
+  }
+  #body2 {
+    font-family: 'Pre', sans-serif;
+    font-weight: thin;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    text-align: center;
+  }
+  .red {
+    color: red;
+    font-weight: bold;
+  }
+  .black {
+    color: #0f0f0f;
+  }
+  .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+  }
+  .rounded-rectangle {
+  width: 70%;
+  background-color: #ff3232;
+  border-radius: 100px; /* 모서리의 둥글기 정도를 조절 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'GmarketSansMedium', serif;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  }
+  #body3{
+    width: auto;
+    font-family: 'Busan', sans-serif;
+    color: #ffffff;
+    font-weight: lighter;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
