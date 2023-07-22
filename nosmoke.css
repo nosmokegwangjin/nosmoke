@@ -252,7 +252,7 @@
     color: #0f0f0f;
   }
   .container {
-    width: 75vw;
+    width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
