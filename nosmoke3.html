@@ -47,7 +47,7 @@
           style: function (feature) {
             return {
               color: 'red',
-              fillColor: 'blue',
+              fillColor: 'red',
               fillOpacity: 0.5,
             };
           }
@@ -62,9 +62,9 @@
         marker = L.marker([latitude, longitude]).addTo(map);
         marker.bindTooltip("현위치").openTooltip();
         marker.setStyle({
-          color: 'blue',
-          fillColor: 'blue',
-          fillOpacity: 0.7
+          color: 'black',
+          fillColor: 'black',
+          fillOpacity: 1
         });
       });
     </script>
