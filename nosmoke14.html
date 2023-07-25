@@ -32,15 +32,15 @@
     <script> var map </script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-      map = L.map('map').setView([37.549300, 127.087231], 18); //[맵 초기 좌표]
+      map = L.map('map',{
+      zoomDelta: 0.25
+      }).setView([37.549300, 127.087231], 17.5); //[맵 초기 좌표]
 
       L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
         maxZoom: 19,
         minZoom: 14,
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
       }).addTo(map);
-      
-      L.control.zoom({ zoomDelta: 0.1 }).addTo(map);
       
     fetch("nosmoke.json")
       .then(response => response.json())
