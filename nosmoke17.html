@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=0.3, user-scalable=yes">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<head>
+<link rel="stylesheet" href="./nosmoke.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+  <div class="main">
+    <div id="head0">
+      <div id="grid1"></div>
+      <div id="grid2">
+        <img src="./images/picture1.jpg" height="120%">
+      </div>
+      <div id="grid3"></div>
+      <div id="grid2">
+        <img src="./images/picture2.png" height="100%">
+      </div>
+    </div>
+
+    <div id="just-container20"></div>
+    <div id="head1">
+      나와 모두의 건강을 위한
+    </div>
+    <div id="just-container20"></div>
+    <div id="head2">금연구역</div>
+    <div id="map-container">
+      <div id="map"></div>
+    </div>
+    <script> var map </script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+      map = L.map('map',{
+        zoomDelta: 0.25,
+        zoomSnap: 0
+      }).setView([37.544140, 127.071268], 17.75); //[맵 초기 좌표]
+
+      L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+        maxZoom: 19,
+        minZoom: 14,
+        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+      }).addTo(map);
+      
+    fetch("nosmoke.json")
+      .then(response => response.json())
+      .then(data => {
+        var geojsonLayer = L.geoJSON(data, {
+          style: function (feature) {
+            return {
+              color: 'red',
+              fillColor: 'red',
+              fillOpacity: 0.5,
+            };
+          }
+        }).addTo(map);
+      })
+      .catch(error => console.error('Error:', error));
+      
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+
+        marker = L.marker([latitude, longitude]).addTo(map);
+        marker.bindTooltip("현위치").openTooltip();
+        marker.setStyle({
+          color: 'black',
+          fillColor: 'black',
+          fillOpacity: 1
+        });
+      });
+    </script>
+        <div id="body0">군자로 ~ 아차산로33길 보행로 130m</div>
+  </div>
+  <div class="sub">
+    <div id="just-container20"></div>
+    <div id="body1">
+      흡연 시 <span class="red">10만원</span>의 과태료과 부과됩니다.
+    </div>
+    <div id="body2">
+      국민건강증진법 제9조 금연시설 및 금연구역 기준에 의거 흡연을 금합니다.
+    </div>
+    <div id="just-container20"></div>
+    <div class="container">
+      <a href="https://play.google.com/store/apps/details?id=kr.go.ghealth.nosmoking" target="_blank" class="rounded-rectangle">광진금연안전지도앱</a>
+    </div>
+    <div class="container">
+      <a href="tel:02-450-1976" target="_blank" class="rounded-rectangle">☏금연상담전화</a>
+    </div>
+    <div class="container">
+      <a href="https://www.gwangjin.go.kr/health/main/contents.do?menuNo=300071" target="_blank" class="rounded-rectangle">금연클리닉 홈페이지</a>
+    </div>
+    <div id="just-container20"></div>
+
+      <a href="https://www.gwangjin.go.kr/health/main/main.do" target="_blank" id="body3">
+      <img src="./images/picture3.gif" height="100%">
+      <span class="black">..</span>광진구보건소</a>
+
+<div id="just-container20"></div>
+<div id="just-container20"></div>
+  </div>
+</body>
+</html>
