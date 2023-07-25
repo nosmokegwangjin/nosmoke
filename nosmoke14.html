@@ -2,10 +2,8 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=0.3, user-scalable=yes">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-<head>
 <link rel="stylesheet" href="./nosmoke.css">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+<head>
 </head>
 <body>
   <div class="main">
@@ -29,46 +27,7 @@
     <div id="map-container">
       <div id="map"></div>
     </div>
-    <script> var map </script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script>
-      map = L.map('map').setView([37.544147, 127.071288], 18); //[맵 초기 좌표]
-
-      L.tileLayer('https://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-        maxZoom: 19,
-        minZoom: 14,
-        subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-      }).addTo(map);
-      
-    fetch("nosmoke.json")
-      .then(response => response.json())
-      .then(data => {
-        var geojsonLayer = L.geoJSON(data, {
-          style: function (feature) {
-            return {
-              color: 'red',
-              fillColor: 'red',
-              fillOpacity: 0.5,
-            };
-          }
-        }).addTo(map);
-      })
-      .catch(error => console.error('Error:', error));
-      
-      navigator.geolocation.getCurrentPosition(function(position) {
-        var latitude = position.coords.latitude;
-        var longitude = position.coords.longitude;
-
-        marker = L.marker([latitude, longitude]).addTo(map);
-        marker.bindTooltip("현위치").openTooltip();
-        marker.setStyle({
-          color: 'black',
-          fillColor: 'black',
-          fillOpacity: 1
-        });
-      });
-    </script>
-        <div id="body0">화양초등학교 150m</div>
+    <div id="body0">화양초등학교 150m</div>
   </div>
   <div class="sub">
     <div id="just-container20"></div>
@@ -88,14 +47,18 @@
     <div class="container">
       <a href="https://www.gwangjin.go.kr/health/main/contents.do?menuNo=300071" target="_blank" class="rounded-rectangle">금연클리닉 홈페이지</a>
     </div>
-    <div id="just-container20"></div>
-
-      <a href="https://www.gwangjin.go.kr/health/main/main.do" target="_blank" id="body3">
+    <a href="https://www.gwangjin.go.kr/health/main/main.do" target="_blank" id="body3">
       <img src="./images/picture3.gif" height="100%">
-      <span class="black">..</span>광진구보건소</a>
+      <span class="black">..</span>광진구보건소
+    </a>
 
-<div id="just-container20"></div>
-<div id="just-container20"></div>
+    <div id="just-container20"></div>
+    <div id="just-container20"></div>
   </div>
+
+  <!-- External JavaScript files -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="./nosmoke.js"></script>
 </body>
 </html>
