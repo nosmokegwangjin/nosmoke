@@ -38,6 +38,7 @@ function initializeMap() {
       fillOpacity: 1
     });
   });
+  map = L.map('map').setView([latitude, longitude], 17);
 }
 
 // Call the initializeMap function when the DOM is fully loaded
