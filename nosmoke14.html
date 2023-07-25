@@ -40,6 +40,8 @@
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
       }).addTo(map);
       
+      L.control.zoom({ zoomDelta: 0.1 }).addTo(map);
+      
     fetch("nosmoke.json")
       .then(response => response.json())
       .then(data => {
