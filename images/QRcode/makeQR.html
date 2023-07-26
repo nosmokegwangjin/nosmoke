@@ -43,6 +43,7 @@
         <input id="urlInput" type="text" placeholder="URL을 입력하세요"></br>
         <input id="textInput" type="text" placeholder="문구를 입력하세요">
         <button onclick="generateQRCode()">QR 코드 생성</button>
+	<button id="shot">다운로드</button>
   </div>
   <div id="empty">  </div>
   <div id="container">
@@ -100,7 +101,23 @@
             link.download = 'merged-image.jpg';
             link.click();
         }
+    // 캡처 버튼 클릭 시 실행되는 함수
+    document.getElementById('shot').addEventListener('click', function () {
+      // 캡처할 대상 요소를 선택합니다.
+      const elementToCapture = document.getElementById('container');
 
+      // html2canvas 라이브러리를 사용하여 선택한 요소를 캡처합니다.
+      html2canvas(elementToCapture).then(function (canvas) {
+        // 캡처한 캔버스를 이미지 데이터로 변환합니다.
+        const imageDataURL = canvas.toDataURL('image/jpeg');
+
+        // 이미지 데이터를 링크로 만들어서 다운로드합니다.
+        const downloadLink = document.createElement('a');
+        downloadLink.href = imageDataURL;
+        downloadLink.download = 'captured_image.jpg';
+        downloadLink.click();
+      });
+    });
     </script>
 </body>
 </html>
