@@ -16,9 +16,6 @@
       #input{
         margin-left: 50px;
       }
-      #url{
-	width: 500px;	
-      }
       #overlay {
         height: 70.45px;
 	width: 70.45px;
@@ -43,8 +40,8 @@
 <body>
   <h1>QR코드만들기</h1>
   <div id="input">
-        <input id="urlInput" type="text" value="https://www.nosmokegwangjin.co.kr/nosmoke1.html"></br>
-        <input id="textInput" type="text" placeholder="금연거리 이름"></br>
+        <input id="urlInput" type="text" style="width: 400px;" value="https://www.nosmokegwangjin.co.kr/nosmoke1.html"></br>
+        <input id="textInput" type="text" style="width: 400px;" placeholder="금연거리 이름"></br>
         <button onclick="generateQRCode()">QR 코드 생성</button>
 	<button id="shot">다운로드</button>
   </div>
