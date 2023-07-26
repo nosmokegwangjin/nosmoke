@@ -63,7 +63,21 @@
         var latitude = position.coords.latitude;
         var longitude = position.coords.longitude;
 
-        marker = L.marker([latitude, longitude]).addTo(map);
+        var iconUrl = './images/pin.png';
+        var customIcon = L.icon({
+          iconUrl: iconUrl,
+          iconSize: [32, 32],
+          iconAnchor: [16, 32],
+          popupAnchor: [0, -32]
+        });
+        var marker = L.marker([latitude, longitude], {icon: customIcon}).addTo(map);
+
+        var tooltip = new L.Tooltip({
+          direction: 'bottom', // 툴팁을 아이콘 아래로 위치시킵니다.
+          permanent: false, // 툴팁을 자동으로 닫지 않도록 설정합니다.
+          interactive: true, // 사용자 입력에 응답하지 않도록 설정합니다.
+          noWrap: true // 툴팁 내용이 길어질 경우 줄 바꿈을 방지합니다.
+        }).setContent("현재위치"); // 툴팁에 표시할 내용을 입력합니다.
         marker.bindTooltip("현위치").openTooltip();
         marker.setStyle({
           color: 'black',
