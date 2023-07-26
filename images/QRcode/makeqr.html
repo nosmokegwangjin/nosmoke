@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <title>QR 코드 만들기></title>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+      #container {
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        width:440px;
+        position: relative;
+        border: 2px solid #000;
+      }
+      #input{
+        margin-left: 50px;
+      }
+      #overlay {
+        height: 70.40px;
+	      width: 70.40px;
+        position: absolute;
+        top: 188.70px;
+        left: 198.70px;
+      }
+      #bottomText {
+        width:410px;
+        text-align: center;
+        margin-top: 20px;
+        font-family: 'Orbit', sans-serif;
+        font-size: 33px;
+        color: #333;
+      }
+      #empty {
+        height: 20%;
+        margin-top: 50px;
+      }
+    </style>
+</head>
+<body>
+  <h1>QR코드만들기</h1>
+  <div id="input">
+        <input id="urlInput" type="text" placeholder="URL을 입력하세요"></br>
+        <input id="textInput" type="text" placeholder="문구를 입력하세요">
+        <button onclick="generateQRCode()">QR 코드 생성</button>
+  </div>
+  <div id="empty">  </div>
+  <div id="container">
+    <img id="largeImage" src="" alt="큰 이미지">
+    <img id="overlay" src="gu_mark.png" alt="작은 이미지">
+    <div id="bottomText">
+    </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <script>
+        function generateQRCode() {
+            const urlInput = document.getElementById('urlInput');
+            const largeImage = document.getElementById('largeImage');
+
+            const qrCodeContainer = document.createElement('div');
+
+            new QRCode(qrCodeContainer, {
+                text: urlInput.value,
+                width: 410,
+                height: 410
+            });
+
+            const canvas = qrCodeContainer.querySelector('canvas');
+            const qrCodeImageURL = canvas.toDataURL('image/png');
+
+            largeImage.src = qrCodeImageURL;
+            largeImage.onload = function() {
+                mergeImages();
+            };
+            var inputElement = document.getElementById("textInput");
+            var userInput = inputElement.value;
+
+            var outputDiv = document.getElementById("bottomText");
+            outputDiv.innerHTML = userInput;
+        }
+
+        function mergeImages() {
+            const container = document.getElementById('container');
+            const overlay = document.getElementById('overlay');
+
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+
+            canvas.width = container.offsetWidth;
+            canvas.height = container.offsetHeight;
+
+            context.drawImage(container, 0, 0);
+            context.drawImage(overlay, 0, 0);
+
+            const mergedImageURL = canvas.toDataURL('image/jpeg');
+
+            // 이미지 다운로드
+            const link = document.createElement('a');
+            link.href = mergedImageURL;
+            link.download = 'merged-image.jpg';
+            link.click();
+        }
+
+    </script>
+</body>
+</html>
