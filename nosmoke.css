@@ -36,7 +36,12 @@
     font-weight: normal;
     src: url('./fonts/Cafe24Supermagic-Regular-v1.0.woff2') format('woff2');
   }
-
+  @font-face {
+    font-family: 'YDD';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./fonts/yeongdeok.woff') format('woff');
+  }
   html {
     background-color: #000000;
     white-space: nowrap;
@@ -199,7 +204,7 @@
   #head1 {
     margin-top: 0;
     letter-spacing: 0.005em;
-    font-family: 'MYY', sans-serif;
+    font-family: 'YDD', sans-serif;
     display: flex;
     align-items: flex-start;
   }
