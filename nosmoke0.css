@@ -1,0 +1,27 @@
+/* 슬라이더 컨테이너 스타일 */
+.image-slider {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    display: flex; /* 이미지와 내용을 세로로 가운데 정렬하기 위해 Flexbox 사용 */
+    flex-direction: column; /* 요소들을 세로 방향으로 정렬 */
+    justify-content: center; /* 세로 방향으로 가운데 정렬 */
+    align-items: center; /* 가로 방향으로 가운데 정렬 */
+}
+
+/* 이미지 슬라이더 스타일 */
+.image-slider img {
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+/* 아래 내용 스타일을 추가하세요 */
+main {
+    text-align: center;
+    height: 100vh;
+    display: flex; /* 이미지와 내용을 세로로 가운데 정렬하기 위해 Flexbox 사용 */
+    justify-content: center; /* 세로 방향으로 가운데 정렬 */
+    align-items: center;
+}
