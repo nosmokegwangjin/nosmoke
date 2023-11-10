@@ -17,7 +17,7 @@
 
     .swiper-container {
       width: 100%;
-      height: auto; /* 슬라이드 컨테이너의 높이를 전체 화면 높이로 설정 */
+      height: 100%; /* 슬라이드 컨테이너의 높이를 전체 화면 높이로 설정 */
     }
 
     .swiper-slide {
@@ -27,10 +27,10 @@
       height: 100%; /* 슬라이드 높이를 화면 높이와 동일하게 설정 */
     }
     .png{
-      margin-top: 3vh;
+      margin-top: 0vh;
     }
     .swiper-slide img {
-      padding-top: 0vh;
+      padding-top: 8vh;
       max-width: 100%;
     }
 
@@ -52,12 +52,13 @@
       color: white;
       padding: 10px 20px;
       border: none;
-      border-radius: 5px;
+      border-radius: 20px;
       cursor: pointer;
       text-decoration: none;
       text-align: center;
       font-family: 'GmarketSansMedium', serif;
       font-weight: bold;
+      letter-spacing: 1.1px;
     }
     .logoN {
       margin-left: 5%;
@@ -72,22 +73,21 @@
       display: flex;
       flex-direction: row;
       margin-top: 3vh;
+      margin-bottom: 2vh;
       width: 100%;
+      position: fixed;
     }
     .buttonBox{
-      margin-top: 3vh;
+      width: 100%;
       display: flex;
       flex-direction: column;
+      position: fixed;
+      top: 55%;
+      left: 0%;
     }
   </style>
 </head>
 <body>
-  <div class="top">
-    <div class="logobox">
-    <img src="./images/GL.png" alt="Slide 1" class="logoG">
-    <img src="./images/NL.png" alt="Slide 1" class="logoN">
-    </div>
-  </div>
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -103,6 +103,10 @@
         <img src="./images/4.png" alt="Slide 4">
       </div>
     </div>
+  </div>
+    <div class="logobox">
+    <img src="./images/GL.png" alt="Slide 1" class="logoG">
+    <img src="./images/NL.png" alt="Slide 1" class="logoN">
   </div>
   <div class="buttonBox">
         <a href="tel:02-450-1976" target="_blank" class="button">☏금연상담전화</a>
