@@ -2,8 +2,8 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=3.0, user-scalable=no">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>스와이퍼 예제</title>
   <style>
     body, html {
@@ -11,65 +11,104 @@
       padding: 0;
       height: 100%;
       background-color: rgb(224, 255, 199);
+      display: flex;
+      flex-direction: column;
     }
 
     .swiper-container {
       width: 100%;
-      height: 66.6%; /* 슬라이드 컨테이너의 높이를 전체 화면 높이로 설정 */
-      display: flex;
-      align-items: flex-start;
+      height: auto; /* 슬라이드 컨테이너의 높이를 전체 화면 높이로 설정 */
     }
 
     .swiper-slide {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%; /* 슬라이드 높이를 화면 높이와 동일하게 설정 */
+      flex-direction: column;
+      justify-content:flex-start;
+      height: 100%; /* 슬라이드 높이를 화면 높이와 동일하게 설정 */
     }
-
+    .png{
+      margin-top: 3vh;
+    }
     .swiper-slide img {
+      padding-top: 0vh;
       max-width: 100%;
-      max-height: 100%;
     }
 
     /* 스크롤바 스타일 지정 */
     .swiper-scrollbar {
       background-color: rgba(51, 51, 51, 0.3); /* 흐린 스크롤바 */
     }
-
-    /* 버튼 스타일 */
-    .button-container {
-      display: flex;
-      justify-content: center;
-      padding: 20px;
-    }
-
+    @font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('./fonts/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
     .button {
-      background-color: #0077FF;
+      margin-top: 5vh;
+      margin-right: 5vh;
+      margin-left: 5vh;
+      background-color: rgba(62,136,17,0.8);
       color: white;
       padding: 10px 20px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      font-family: 'GmarketSansMedium', serif;
+      font-weight: bold;
+    }
+    .logoN {
+      margin-left: 5%;
+      width: 30%;
+      pointer-events: none;
+    }
+    .logoG{
+      margin-left: 8%;
+      width: 50%;
+    }
+    .logobox{
+      display: flex;
+      flex-direction: row;
+      margin-top: 3vh;
+      width: 100%;
+    }
+    .buttonBox{
+      margin-top: 1vh;
+      display: flex;
+      flex-direction: column;
     }
   </style>
 </head>
 <body>
+  <div class="top">
+    <div class="logobox">
+    <img src="./GL.png" alt="Slide 1" class="logoG">
+    <img src="./NL.png" alt="Slide 1" class="logoN">
+    </div>
+  </div>
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="./images/1.png" alt="Slide 1">
+        <img src="./1.png" alt="Slide 1" class="png">
       </div>
       <div class="swiper-slide">
-        <img src="./images/2.png" alt="Slide 2">
+        <img src="./2.png" alt="Slide 2">
       </div>
       <div class="swiper-slide">
-        <img src="./images/3.png" alt="Slide 3">
+        <img src="./3.png" alt="Slide 3">
       </div>
       <div class="swiper-slide">
-        <img src="./images/4.png" alt="Slide 4">
+        <img src="./4.png" alt="Slide 4">
       </div>
     </div>
+  </div>
+  <div class="buttonBox">
+        <a href="tel:02-450-1976" target="_blank" class="button">☏금연상담전화</a>
+        <a href="https://play.google.com/store/apps/details?id=kr.go.ghealth.nosmoking" target="_blank" class="button">광진금연안전지도앱</a>
+        <a href="https://www.gwangjin.go.kr/health/main/contents.do?menuNo=300071" target="_blank" class="button">금연클리닉 홈페이지</a>
+  </div>
 
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -82,14 +121,9 @@
     <div class="swiper-scrollbar"></div>
   </div>
 
-  <div class="button-container">
-    <button class="button">버튼 추가</button>
-  </div>
-
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
-      direction: 'horizontal', /* 수평 슬라이딩으로 설정 */
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
