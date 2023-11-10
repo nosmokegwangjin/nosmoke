@@ -61,9 +61,8 @@
       letter-spacing: 1.1px;
     }
     .logoN {
-      margin-left: 5%;
-      width: 30%;
-      pointer-events: none;
+      margin-left: 0%;
+      width: 100%;
     }
     .logoG{
       margin-left: 8%;
@@ -85,6 +84,10 @@
       top: 55%;
       left: 0%;
     }
+    .logoNBox{
+      width: 30%;
+      margin-left: 5%;
+    }
   </style>
 </head>
 <body>
@@ -105,9 +108,11 @@
     </div>
   </div>
     <div class="logobox">
-    <img src="./images/GL.png" alt="Slide 1" class="logoG">
-    <img src="./images/NL.png" alt="Slide 1" class="logoN">
-  </div>
+      <img src="./images/GL.png" alt="Slide 1" class="logoG">
+      <a href="www.nosmokeguide.go.kr" class="logoNBox">
+        <img src="./images/NL.png" class="logoN">
+      </a>
+    </div>
   <div class="buttonBox">
         <a href="tel:02-450-1976" target="_blank" class="button">☏광진구보건소 금연상담전화</a>
         <a href="https://play.google.com/store/apps/details?id=kr.go.ghealth.nosmoking" target="_blank" class="button">광진금연안전지도앱</a>
@@ -130,6 +135,8 @@
     var swiper = new Swiper('.swiper-container', {
       autoplay: {
       delay: 3000, // 3초마다 넘김
+      stopOnLastSlide: true,
+      disableOnInteraction: true,
       },
       navigation: {
         nextEl: '.swiper-button-next',
