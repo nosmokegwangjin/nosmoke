@@ -45,7 +45,7 @@
   font-style: normal;
 }
     .button {
-      margin-top: 5vh;
+      margin-top: 2vh;
       margin-right: 5vh;
       margin-left: 5vh;
       background-color: rgba(62,136,17,0.8);
@@ -75,7 +75,7 @@
       width: 100%;
     }
     .buttonBox{
-      margin-top: 1vh;
+      margin-top: 3vh;
       display: flex;
       flex-direction: column;
     }
@@ -124,6 +124,9 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
+      autoplay: {
+      delay: 3000, // 3초마다 넘김
+      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
