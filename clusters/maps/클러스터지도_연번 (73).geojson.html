@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bac80a78b65301e3111af551c7290538 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bac80a78b65301e3111af551c7290538" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bac80a78b65301e3111af551c7290538 = L.map(
+                "map_bac80a78b65301e3111af551c7290538",
+                {
+                    center: [37.5665, 126.978],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f44e7172a497ad203d7210c76452f235 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f44e7172a497ad203d7210c76452f235.addTo(map_bac80a78b65301e3111af551c7290538);
+        
+    
+
+        function geo_json_020bab8a577a201380d3f12987ea12d0_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_020bab8a577a201380d3f12987ea12d0 = L.geoJson(null, {
+                onEachFeature: geo_json_020bab8a577a201380d3f12987ea12d0_onEachFeature,
+            
+        });
+
+        function geo_json_020bab8a577a201380d3f12987ea12d0_add (data) {
+            geo_json_020bab8a577a201380d3f12987ea12d0
+                .addData(data);
+        }
+            geo_json_020bab8a577a201380d3f12987ea12d0_add({"features": [{"geometry": {"coordinates": [127.082573854036, 37.5298786624418], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082573854036, "\uc0c1\ud638": "GS25 \uc790\uc591\uc5d0\ub374\uc810", "\uc704\ub3c4": 37.5298786624418, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 34. 1\uce35 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.081236202089, 37.5293012373563], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.081236202089, "\uc0c1\ud638": "GS25 \uc790\uc591\ud0c0\uc6b4\ube4c\uc810", "\uc704\ub3c4": 37.5293012373563, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c52\ub77c\uae38 47. 1\uce35 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082848003148, 37.5292864224514], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082848003148, "\uc0c1\ud638": "\uace8\ub4e0\ud53c\uc790", "\uc704\ub3c4": 37.5292864224514, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 47  \uc11d\uc815\ube4c\ub529 1\uce35 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082651253991, 37.5285600828315], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082651253991, "\uc0c1\ud638": "\ub099\ucc9c\uc815", "\uc704\ub3c4": 37.5285600828315, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 62 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082629574722, 37.5291111505017], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082629574722, "\uc0c1\ud638": "\ub17c\ub450\ub801", "\uc704\ub3c4": 37.5291111505017, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 50 (\uc790\uc591\ub3d9 (1\uce35))"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082892818454, 37.5289926645406], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082892818454, "\uc0c1\ud638": "\ub2e4\ubbf8\uae40\ubc25", "\uc704\ub3c4": 37.5289926645406, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 55 (\uc790\uc591\ub3d9 (1\uce35))"}, "type": "Feature"}, {"geometry": {"coordinates": [127.080229317537, 37.5294128389276], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.080229317537, "\uc0c1\ud638": "\ub300\ub3d9\uac01", "\uc704\ub3c4": 37.5294128389276, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c52\ub77c\uae38 32 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082429879687, 37.5308458076493], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082429879687, "\uc0c1\ud638": "\ub5a1\uc758\uc791\ud488 \uc790\uc591\uc810", "\uc704\ub3c4": 37.5308458076493, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 14-1  1\uce35 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082640777531, 37.5290109513032], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082640777531, "\uc0c1\ud638": "\ubcc4\ud5e4\ub294\ubc24", "\uc704\ub3c4": 37.5290109513032, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 54  1\uce35 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082425891196, 37.530408464451], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082425891196, "\uc0c1\ud638": "\uc11c\uc591\ubc18\uc8fc\uc2dd\ub2f9", "\uc704\ub3c4": 37.530408464451, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 22  1\uce35 101\ud638 (\uc790\uc591\ub3d9  \ub4dc\ub9bc\ud330\ub9ac\uc2a46\ucc28)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.080313555613, 37.5295802778295], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.080313555613, "\uc0c1\ud638": "\uc218\ube48\uc2dd\ub2f9", "\uc704\ub3c4": 37.5295802778295, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c52\ub77c\uae38 29 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.080313555613, 37.5295802778295], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.080313555613, "\uc0c1\ud638": "\uc218\ube48\uc2dd\ub2f9", "\uc704\ub3c4": 37.5295802778295, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \uc790\uc591\ub85c5\uae38 22 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082914027806, 37.5288365060996], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082914027806, "\uc0c1\ud638": "\uc528\uc720 \uc790\uc591\ud55c\uac15\uc810", "\uc704\ub3c4": 37.5288365060996, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 59. \uad11\uc6b4\ube4c\ub529 101\ud638 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.080394826788, 37.5301453305664], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.080394826788, "\uc0c1\ud638": "\uc528\uc720\uc790\uc591\uc9c4\uc601\uc810", "\uc704\ub3c4": 37.5301453305664, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c54\uae38 31. 1\uce35 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082772360302, 37.5303497471496], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082772360302, "\uc0c1\ud638": "\uc544\ube60\ub3c8\uae4c\uc2a4", "\uc704\ub3c4": 37.5303497471496, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 23  1\uce35 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.081764039943, 37.5291568029745], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.081764039943, "\uc0c1\ud638": "\uc5b4\uc6b8\ub9bc\uac00\ub4e0", "\uc704\ub3c4": 37.5291568029745, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c52\ub77c\uae38 56-1  1\uce35 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082103043869, 37.5287947256038], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082103043869, "\uc0c1\ud638": "\uc624\ubcf5\uc300\uc0c1\ud68c", "\uc704\ub3c4": 37.5287947256038, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c52\ub9c8\uae38 67 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082809380008, 37.529655499702], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082809380008, "\uc0c1\ud638": "\uce74\ud398\uc9c0\ud558", "\uc704\ub3c4": 37.529655499702, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 41 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.08246663775, 37.5299108130038], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.08246663775, "\uc0c1\ud638": "\ucfe0\ucf04\uce58\ud0a8(\uc790\uc591\uc810)", "\uc704\ub3c4": 37.5299108130038, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c52\ub098\uae38 64  1\uce35 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082716026959, 37.530664416243], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082716026959, "\uc0c1\ud638": "\ud0c0\ucf54\ube44", "\uc704\ub3c4": 37.530664416243, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 13  1\uce35 101\ud638 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.083183157539, 37.5307595942691], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.083183157539, "\uc0c1\ud638": "\ud3c9\uac15\uc624\ub9ac\ub18d\uc6d0", "\uc704\ub3c4": 37.5307595942691, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \uc790\uc591\ub85c5\uae38 51  1\uce35 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.080704224862, 37.5292807889486], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.080704224862, "\uc0c1\ud638": "\ud560\uba38\ub2c8\uc308\ubc25(\uad11\uc9c4\uc810)", "\uc704\ub3c4": 37.5292807889486, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c52\ub77c\uae38 38  1\uce35 (\uc790\uc591\ub3d9)"}, "type": "Feature"}, {"geometry": {"coordinates": [127.082784361222, 37.530255133607], "type": "Point"}, "properties": {"\uacbd\ub3c4": 127.082784361222, "\uc0c1\ud638": "\ud669\uc81c\ubc14\ubca0\ud050", "\uc704\ub3c4": 37.530255133607, "\uc8fc\uc18c": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \ub69d\uc12c\ub85c56\uae38 25 (\uc790\uc591\ub3d9)"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_020bab8a577a201380d3f12987ea12d0.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature=>typeof(feature)=='object' ? JSON.stringify(feature) : feature;
+    let fields = ["\uc0c1\ud638", "\uc8fc\uc18c"];
+    let aliases = ["\uc0c1\ud638", "\uc8fc\uc18c"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{"className": "foliumtooltip", "sticky": true});
+                     
+    
+            geo_json_020bab8a577a201380d3f12987ea12d0.addTo(map_bac80a78b65301e3111af551c7290538);
+        
+</script>
+</html>
