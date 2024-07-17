@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지도 링크</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-top: 50px;
+        }
+        
+        .link-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+        .link-container a {
+            display: block;
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .link-container a:hover {
+            background-color: #f2f2f2;
+        }
+        
+        /* 모바일 반응형 디자인 */
+        @media (max-width: 767px) {
+            .link-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .link-container a {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>지도 링크</h1>
+    <div class="link-container">
+        <script>
+            for (let i = 1; i <= 3; i++) {
+                const linkUrl = `./maps/${i}조.html`;
+                const linkText = `${i}조`;
+                document.write(`<a href="${linkUrl}" target="_blank">${linkText}</a>`);
+
+                document.write(`</br>`);
+            }
+        </script>
+    </div>
+</body>
+</html>
