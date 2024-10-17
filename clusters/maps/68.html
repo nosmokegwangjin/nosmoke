@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68b41ba3a13d83d08ab1edb59e0cd349 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68b41ba3a13d83d08ab1edb59e0cd349" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68b41ba3a13d83d08ab1edb59e0cd349 = L.map(
+                "map_68b41ba3a13d83d08ab1edb59e0cd349",
+                {
+                    center: [37.54574104812, 127.07385854204],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0477d2a2a1fc003d0e1170b2db546cb4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0477d2a2a1fc003d0e1170b2db546cb4.addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var marker_f6e74a82e61aba2f7d8fddb09c514f41 = L.marker(
+                [37.542506765, 127.071145198],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_5f370e56950968e894ec9bd83a902b89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f6e74a82e61aba2f7d8fddb09c514f41.setIcon(icon_5f370e56950968e894ec9bd83a902b89);
+        
+    
+        var popup_a144cf5fd3f11f915c447b7b6c64718f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5e3057c0afc6eb7f7656d122515276b5 = $(`<div id="html_5e3057c0afc6eb7f7656d122515276b5" style="width: 100.0%; height: 100.0%;">         <div style="width: 240px; white-space: normal;">             4802. 서울 주해옥 돼지곱창전골         </div>         </div>`)[0];
+                popup_a144cf5fd3f11f915c447b7b6c64718f.setContent(html_5e3057c0afc6eb7f7656d122515276b5);
+            
+        
+
+        marker_f6e74a82e61aba2f7d8fddb09c514f41.bindPopup(popup_a144cf5fd3f11f915c447b7b6c64718f)
+        ;
+
+        
+    
+    
+            var marker_331e589051e7f0bbc4fc082f56679d1b = L.marker(
+                [37.54287278, 127.070829902],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_67229b357fa7e261a6f95850b6307ff5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_331e589051e7f0bbc4fc082f56679d1b.setIcon(icon_67229b357fa7e261a6f95850b6307ff5);
+        
+    
+        var popup_6369c4065c823de07709a228e311a4d0 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_bd632ebf749176d74fc2a71ff81695f9 = $(`<div id="html_bd632ebf749176d74fc2a71ff81695f9" style="width: 100.0%; height: 100.0%;">         <div style="width: 200px; white-space: normal;">             4803. 멘부리 건대직영점         </div>         </div>`)[0];
+                popup_6369c4065c823de07709a228e311a4d0.setContent(html_bd632ebf749176d74fc2a71ff81695f9);
+            
+        
+
+        marker_331e589051e7f0bbc4fc082f56679d1b.bindPopup(popup_6369c4065c823de07709a228e311a4d0)
+        ;
+
+        
+    
+    
+            var marker_4550cd6d7e8b6f250955e9b1774e6392 = L.marker(
+                [37.543454297, 127.072018668],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_285e6f8fe47930bc1246a9b06f57caab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4550cd6d7e8b6f250955e9b1774e6392.setIcon(icon_285e6f8fe47930bc1246a9b06f57caab);
+        
+    
+        var popup_ecf791171876c3b1cfe0a51c3cc137a4 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7cffbf625d61703f69f20a017738cf96 = $(`<div id="html_7cffbf625d61703f69f20a017738cf96" style="width: 100.0%; height: 100.0%;">         <div style="width: 270px; white-space: normal;">             4804. 영스톤(YOUNG STONE)         </div>         </div>`)[0];
+                popup_ecf791171876c3b1cfe0a51c3cc137a4.setContent(html_7cffbf625d61703f69f20a017738cf96);
+            
+        
+
+        marker_4550cd6d7e8b6f250955e9b1774e6392.bindPopup(popup_ecf791171876c3b1cfe0a51c3cc137a4)
+        ;
+
+        
+    
+    
+            var marker_5a09cbc87ad638a54220e124c6b012a2 = L.marker(
+                [37.544337537, 127.072407268],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_ef7319dce18f341a3e192b769391bf0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a09cbc87ad638a54220e124c6b012a2.setIcon(icon_ef7319dce18f341a3e192b769391bf0d);
+        
+    
+        var popup_277e43078c483c14611d4af83391f561 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_12e83f2ee6f6e68c240cf0e4385a09fc = $(`<div id="html_12e83f2ee6f6e68c240cf0e4385a09fc" style="width: 100.0%; height: 100.0%;">         <div style="width: 230px; white-space: normal;">             4805. 주식회사 스카이네트웍스         </div>         </div>`)[0];
+                popup_277e43078c483c14611d4af83391f561.setContent(html_12e83f2ee6f6e68c240cf0e4385a09fc);
+            
+        
+
+        marker_5a09cbc87ad638a54220e124c6b012a2.bindPopup(popup_277e43078c483c14611d4af83391f561)
+        ;
+
+        
+    
+    
+            var marker_df3de6ca249970ea4d17c4a2c4be1d6c = L.marker(
+                [37.545489718, 127.072998696],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_0f9c8bae55d94a035f9764a745c28e4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_df3de6ca249970ea4d17c4a2c4be1d6c.setIcon(icon_0f9c8bae55d94a035f9764a745c28e4a);
+        
+    
+        var popup_43f72741a762e9295459325fa7ee4581 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_650087ac4b33731b6b86109becb455bf = $(`<div id="html_650087ac4b33731b6b86109becb455bf" style="width: 100.0%; height: 100.0%;">         <div style="width: 140px; white-space: normal;">             4806. 엘라또         </div>         </div>`)[0];
+                popup_43f72741a762e9295459325fa7ee4581.setContent(html_650087ac4b33731b6b86109becb455bf);
+            
+        
+
+        marker_df3de6ca249970ea4d17c4a2c4be1d6c.bindPopup(popup_43f72741a762e9295459325fa7ee4581)
+        ;
+
+        
+    
+    
+            var marker_414a5e1089afdd28010b9e7313c9930a = L.marker(
+                [37.54552279, 127.07352764],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_2bbc5b2d8cd427b57e7f2d207429711c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_414a5e1089afdd28010b9e7313c9930a.setIcon(icon_2bbc5b2d8cd427b57e7f2d207429711c);
+        
+    
+        var popup_28cf6db3273b915d68ad8f6cc37da8eb = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_bf014af88a08724abab74fb699a32cfe = $(`<div id="html_bf014af88a08724abab74fb699a32cfe" style="width: 100.0%; height: 100.0%;">         <div style="width: 150px; white-space: normal;">             4807. 뽀끼뽀끼         </div>         </div>`)[0];
+                popup_28cf6db3273b915d68ad8f6cc37da8eb.setContent(html_bf014af88a08724abab74fb699a32cfe);
+            
+        
+
+        marker_414a5e1089afdd28010b9e7313c9930a.bindPopup(popup_28cf6db3273b915d68ad8f6cc37da8eb)
+        ;
+
+        
+    
+    
+            var marker_d62dcb508690f90479f96ecf7115a49b = L.marker(
+                [37.544729716, 127.074826659],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_c88cf5fe6c1b9e51b6b618b349ca4f6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d62dcb508690f90479f96ecf7115a49b.setIcon(icon_c88cf5fe6c1b9e51b6b618b349ca4f6f);
+        
+    
+        var popup_9def13ae85e8ecc1529a17210a2a423a = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_79ee2f77a812af06234a339acd86e4bb = $(`<div id="html_79ee2f77a812af06234a339acd86e4bb" style="width: 100.0%; height: 100.0%;">         <div style="width: 250px; white-space: normal;">             4808. 페르바코(PERBACCO)         </div>         </div>`)[0];
+                popup_9def13ae85e8ecc1529a17210a2a423a.setContent(html_79ee2f77a812af06234a339acd86e4bb);
+            
+        
+
+        marker_d62dcb508690f90479f96ecf7115a49b.bindPopup(popup_9def13ae85e8ecc1529a17210a2a423a)
+        ;
+
+        
+    
+    
+            var marker_caff287916c594ccadb26ae13a949490 = L.marker(
+                [37.546059816, 127.074418867],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_251551b378ce0a544bc081555819fc3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_caff287916c594ccadb26ae13a949490.setIcon(icon_251551b378ce0a544bc081555819fc3d);
+        
+    
+        var popup_c0814344ac0b87cb874bcd4656d2d6dc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_adfe27e9a6d5d048618cd55a22d2d2ad = $(`<div id="html_adfe27e9a6d5d048618cd55a22d2d2ad" style="width: 100.0%; height: 100.0%;">         <div style="width: 250px; white-space: normal;">             4809. 초신당 한우곱도리탕 광진점         </div>         </div>`)[0];
+                popup_c0814344ac0b87cb874bcd4656d2d6dc.setContent(html_adfe27e9a6d5d048618cd55a22d2d2ad);
+            
+        
+
+        marker_caff287916c594ccadb26ae13a949490.bindPopup(popup_c0814344ac0b87cb874bcd4656d2d6dc)
+        ;
+
+        
+    
+    
+            var marker_0565d8efd82095d47780d8f50b4b1df7 = L.marker(
+                [37.545978639, 127.073988305],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_70aacdbf0f77af7cae01831437b707bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0565d8efd82095d47780d8f50b4b1df7.setIcon(icon_70aacdbf0f77af7cae01831437b707bf);
+        
+    
+        var popup_213053d8ee0f8ab871bafbbc9406b155 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3ef56ac8b34a5a3936482a95fe95dab0 = $(`<div id="html_3ef56ac8b34a5a3936482a95fe95dab0" style="width: 100.0%; height: 100.0%;">         <div style="width: 180px; white-space: normal;">             4810. 남산국밥(2)         </div>         </div>`)[0];
+                popup_213053d8ee0f8ab871bafbbc9406b155.setContent(html_3ef56ac8b34a5a3936482a95fe95dab0);
+            
+        
+
+        marker_0565d8efd82095d47780d8f50b4b1df7.bindPopup(popup_213053d8ee0f8ab871bafbbc9406b155)
+        ;
+
+        
+    
+    
+            var marker_9fe07a851ebe22a9592d27ebfcf4e9b2 = L.marker(
+                [37.545978639, 127.073988305],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_f05a0838870712cea3019a51995af7b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9fe07a851ebe22a9592d27ebfcf4e9b2.setIcon(icon_f05a0838870712cea3019a51995af7b9);
+        
+    
+        var popup_d33cce5013635a18b24bcd712acb49b3 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6f501d6d1a6dca24ac81f829aedddb43 = $(`<div id="html_6f501d6d1a6dca24ac81f829aedddb43" style="width: 100.0%; height: 100.0%;">         <div style="width: 190px; white-space: normal;">             4811. 조선육회 건대점         </div>         </div>`)[0];
+                popup_d33cce5013635a18b24bcd712acb49b3.setContent(html_6f501d6d1a6dca24ac81f829aedddb43);
+            
+        
+
+        marker_9fe07a851ebe22a9592d27ebfcf4e9b2.bindPopup(popup_d33cce5013635a18b24bcd712acb49b3)
+        ;
+
+        
+    
+    
+            var marker_fac3ff3beceb6ab368fe9dd860189e9f = L.marker(
+                [37.545978639, 127.073988305],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_d1e5a68add9e6fd18af8b5dc01df9855 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fac3ff3beceb6ab368fe9dd860189e9f.setIcon(icon_d1e5a68add9e6fd18af8b5dc01df9855);
+        
+    
+        var popup_ec465da4e2990e0e2dfaa326c6aa836f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5565dc65933610b5a2c66aa63ae01321 = $(`<div id="html_5565dc65933610b5a2c66aa63ae01321" style="width: 100.0%; height: 100.0%;">         <div style="width: 270px; white-space: normal;">             4812. 굴림샤브&콩국수 어린이대공원점         </div>         </div>`)[0];
+                popup_ec465da4e2990e0e2dfaa326c6aa836f.setContent(html_5565dc65933610b5a2c66aa63ae01321);
+            
+        
+
+        marker_fac3ff3beceb6ab368fe9dd860189e9f.bindPopup(popup_ec465da4e2990e0e2dfaa326c6aa836f)
+        ;
+
+        
+    
+    
+            var marker_52917356ad3daa757ed25c1a5d091851 = L.marker(
+                [37.545978639, 127.073988305],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_1d3869cbcc330e1d588b82d0c48ba145 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_52917356ad3daa757ed25c1a5d091851.setIcon(icon_1d3869cbcc330e1d588b82d0c48ba145);
+        
+    
+        var popup_6e20eb5a7d3fbed42ddf7e696bb9ef2d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_ec80c20de70b30b3bd37b3d569af60e1 = $(`<div id="html_ec80c20de70b30b3bd37b3d569af60e1" style="width: 100.0%; height: 100.0%;">         <div style="width: 200px; white-space: normal;">             4813. 한식의품격 광진점         </div>         </div>`)[0];
+                popup_6e20eb5a7d3fbed42ddf7e696bb9ef2d.setContent(html_ec80c20de70b30b3bd37b3d569af60e1);
+            
+        
+
+        marker_52917356ad3daa757ed25c1a5d091851.bindPopup(popup_6e20eb5a7d3fbed42ddf7e696bb9ef2d)
+        ;
+
+        
+    
+    
+            var marker_34f4a7fa84fde69285d883774f3f45ab = L.marker(
+                [37.545978639, 127.073988305],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_cc42aad45577ba99fbcff48ff067b070 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34f4a7fa84fde69285d883774f3f45ab.setIcon(icon_cc42aad45577ba99fbcff48ff067b070);
+        
+    
+        var popup_b923cfdd8f112d9a9edef89b9895693b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e1d97fc66bb652d5d8d4aa6ffec24089 = $(`<div id="html_e1d97fc66bb652d5d8d4aa6ffec24089" style="width: 100.0%; height: 100.0%;">         <div style="width: 190px; white-space: normal;">             4814. 육식세끼 광진점         </div>         </div>`)[0];
+                popup_b923cfdd8f112d9a9edef89b9895693b.setContent(html_e1d97fc66bb652d5d8d4aa6ffec24089);
+            
+        
+
+        marker_34f4a7fa84fde69285d883774f3f45ab.bindPopup(popup_b923cfdd8f112d9a9edef89b9895693b)
+        ;
+
+        
+    
+    
+            var marker_6f0f78209203de8adc88a0ec4836ecd4 = L.marker(
+                [37.545978639, 127.073988305],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_d50012d79087ef961f969e3f401664fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6f0f78209203de8adc88a0ec4836ecd4.setIcon(icon_d50012d79087ef961f969e3f401664fd);
+        
+    
+        var popup_070d8562fad65e4940f1e19c2e4978cd = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a0041b7167466f606729d3a050a2a915 = $(`<div id="html_a0041b7167466f606729d3a050a2a915" style="width: 100.0%; height: 100.0%;">         <div style="width: 180px; white-space: normal;">             4815. 북촌소한마리탕         </div>         </div>`)[0];
+                popup_070d8562fad65e4940f1e19c2e4978cd.setContent(html_a0041b7167466f606729d3a050a2a915);
+            
+        
+
+        marker_6f0f78209203de8adc88a0ec4836ecd4.bindPopup(popup_070d8562fad65e4940f1e19c2e4978cd)
+        ;
+
+        
+    
+    
+            var marker_5daea757c3d7cbae71aa4b73b3f9f686 = L.marker(
+                [37.546773767, 127.073504861],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_9cb8da5aa743a2cb4b02e95d6c4a657a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5daea757c3d7cbae71aa4b73b3f9f686.setIcon(icon_9cb8da5aa743a2cb4b02e95d6c4a657a);
+        
+    
+        var popup_e9bfd5d74c8922302dffa6ed22379610 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_eb0002bde3c518984f0bdb5acf813ea0 = $(`<div id="html_eb0002bde3c518984f0bdb5acf813ea0" style="width: 100.0%; height: 100.0%;">         <div style="width: 230px; white-space: normal;">             4816. 샹츠마라 어린이대공원점         </div>         </div>`)[0];
+                popup_e9bfd5d74c8922302dffa6ed22379610.setContent(html_eb0002bde3c518984f0bdb5acf813ea0);
+            
+        
+
+        marker_5daea757c3d7cbae71aa4b73b3f9f686.bindPopup(popup_e9bfd5d74c8922302dffa6ed22379610)
+        ;
+
+        
+    
+    
+            var marker_2ba10a439cbc46aceec48264650af5a8 = L.marker(
+                [37.547195356, 127.072860672],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_6ebfb296dcff1a6a88276bd0164d4e59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2ba10a439cbc46aceec48264650af5a8.setIcon(icon_6ebfb296dcff1a6a88276bd0164d4e59);
+        
+    
+        var popup_dd0a7b9be5a56703966558697271b6dc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e3be44b65b822d0eaa37dce2a4b20684 = $(`<div id="html_e3be44b65b822d0eaa37dce2a4b20684" style="width: 100.0%; height: 100.0%;">         <div style="width: 150px; white-space: normal;">             4817. 복복중식         </div>         </div>`)[0];
+                popup_dd0a7b9be5a56703966558697271b6dc.setContent(html_e3be44b65b822d0eaa37dce2a4b20684);
+            
+        
+
+        marker_2ba10a439cbc46aceec48264650af5a8.bindPopup(popup_dd0a7b9be5a56703966558697271b6dc)
+        ;
+
+        
+    
+    
+            var marker_059e3d39b96e60ea0feae77bf572f841 = L.marker(
+                [37.547134775, 127.073088678],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_bfb7fc24d274dd09c18112e681bde78b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_059e3d39b96e60ea0feae77bf572f841.setIcon(icon_bfb7fc24d274dd09c18112e681bde78b);
+        
+    
+        var popup_fb7306f4b5db422fdd8afd11181b86fc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_72f73f95140d6bad8b76a75cae3bfeba = $(`<div id="html_72f73f95140d6bad8b76a75cae3bfeba" style="width: 100.0%; height: 100.0%;">         <div style="width: 160px; white-space: normal;">             4818. 닭갈비 닭         </div>         </div>`)[0];
+                popup_fb7306f4b5db422fdd8afd11181b86fc.setContent(html_72f73f95140d6bad8b76a75cae3bfeba);
+            
+        
+
+        marker_059e3d39b96e60ea0feae77bf572f841.bindPopup(popup_fb7306f4b5db422fdd8afd11181b86fc)
+        ;
+
+        
+    
+    
+            var marker_c8d0ac6abbef7323e6bb8311738346f5 = L.marker(
+                [37.547238294, 127.073426763],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_eb8629cfdde527d60b66038bc14cb8a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8d0ac6abbef7323e6bb8311738346f5.setIcon(icon_eb8629cfdde527d60b66038bc14cb8a5);
+        
+    
+        var popup_0e787c91c23b9604779d7c7ac1564dc1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f38defd707faf56acd66942d616c6824 = $(`<div id="html_f38defd707faf56acd66942d616c6824" style="width: 100.0%; height: 100.0%;">         <div style="width: 210px; white-space: normal;">             4819. 탕화쿵푸마라탕(2)         </div>         </div>`)[0];
+                popup_0e787c91c23b9604779d7c7ac1564dc1.setContent(html_f38defd707faf56acd66942d616c6824);
+            
+        
+
+        marker_c8d0ac6abbef7323e6bb8311738346f5.bindPopup(popup_0e787c91c23b9604779d7c7ac1564dc1)
+        ;
+
+        
+    
+    
+            var marker_e31df810afb331cfeaf3a5ca642396c4 = L.marker(
+                [37.547134959, 127.07345934],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_2eef5c1adfd4149e5aa224645cf285e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e31df810afb331cfeaf3a5ca642396c4.setIcon(icon_2eef5c1adfd4149e5aa224645cf285e4);
+        
+    
+        var popup_ee6304dba492e686d465515f31edb57b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_f13073eb150474553b59bfd4a7d33143 = $(`<div id="html_f13073eb150474553b59bfd4a7d33143" style="width: 100.0%; height: 100.0%;">         <div style="width: 140px; white-space: normal;">             4820. 마라봉         </div>         </div>`)[0];
+                popup_ee6304dba492e686d465515f31edb57b.setContent(html_f13073eb150474553b59bfd4a7d33143);
+            
+        
+
+        marker_e31df810afb331cfeaf3a5ca642396c4.bindPopup(popup_ee6304dba492e686d465515f31edb57b)
+        ;
+
+        
+    
+    
+            var marker_3835a54744209223400f9d910d3fa3c3 = L.marker(
+                [37.547009582, 127.074347967],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_ce805f230a4b0660c3877ca9942f0f0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3835a54744209223400f9d910d3fa3c3.setIcon(icon_ce805f230a4b0660c3877ca9942f0f0b);
+        
+    
+        var popup_693657308adf97b50a0ca9ca0d9cd256 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_52d593e9a6d440334e56bf0e3170b157 = $(`<div id="html_52d593e9a6d440334e56bf0e3170b157" style="width: 100.0%; height: 100.0%;">         <div style="width: 170px; white-space: normal;">             4821. 맥주 컴퍼니         </div>         </div>`)[0];
+                popup_693657308adf97b50a0ca9ca0d9cd256.setContent(html_52d593e9a6d440334e56bf0e3170b157);
+            
+        
+
+        marker_3835a54744209223400f9d910d3fa3c3.bindPopup(popup_693657308adf97b50a0ca9ca0d9cd256)
+        ;
+
+        
+    
+    
+            var marker_ded1b2788be705a6cede89ff56e5779d = L.marker(
+                [37.546242448, 127.074959406],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_9f761f251169de8c08110ed76adaf5cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ded1b2788be705a6cede89ff56e5779d.setIcon(icon_9f761f251169de8c08110ed76adaf5cd);
+        
+    
+        var popup_6c835d735357e76daee7636f01d55d7b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_daaa569e3dc8bf9ec18acff9223cf84b = $(`<div id="html_daaa569e3dc8bf9ec18acff9223cf84b" style="width: 100.0%; height: 100.0%;">         <div style="width: 290px; white-space: normal;">             4822. 바 에이튠즈(BAR:ATUNES)         </div>         </div>`)[0];
+                popup_6c835d735357e76daee7636f01d55d7b.setContent(html_daaa569e3dc8bf9ec18acff9223cf84b);
+            
+        
+
+        marker_ded1b2788be705a6cede89ff56e5779d.bindPopup(popup_6c835d735357e76daee7636f01d55d7b)
+        ;
+
+        
+    
+    
+            var marker_fffe176416c8f97b38790133672207ae = L.marker(
+                [37.546283279, 127.075353888],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_56aac17923bde3db7382fa8f159257cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fffe176416c8f97b38790133672207ae.setIcon(icon_56aac17923bde3db7382fa8f159257cb);
+        
+    
+        var popup_cc5b4f6ee74debf281471c0566727ff7 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_364863002ed8fb37cb240b34dc4a8ae0 = $(`<div id="html_364863002ed8fb37cb240b34dc4a8ae0" style="width: 100.0%; height: 100.0%;">         <div style="width: 170px; white-space: normal;">             4823. 올푸드 포유         </div>         </div>`)[0];
+                popup_cc5b4f6ee74debf281471c0566727ff7.setContent(html_364863002ed8fb37cb240b34dc4a8ae0);
+            
+        
+
+        marker_fffe176416c8f97b38790133672207ae.bindPopup(popup_cc5b4f6ee74debf281471c0566727ff7)
+        ;
+
+        
+    
+    
+            var marker_7a0b47d5cd64060d8de4bc5d6f14248f = L.marker(
+                [37.54645904, 127.075604044],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_e264d8c4afa56dbb78904df479ed9ea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a0b47d5cd64060d8de4bc5d6f14248f.setIcon(icon_e264d8c4afa56dbb78904df479ed9ea2);
+        
+    
+        var popup_b1518c0aee135270b87031bbed69a0f1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2f7b43085cfff83e9cbc940f5029538a = $(`<div id="html_2f7b43085cfff83e9cbc940f5029538a" style="width: 100.0%; height: 100.0%;">         <div style="width: 200px; white-space: normal;">             4824. 우동가조쿠 건대점         </div>         </div>`)[0];
+                popup_b1518c0aee135270b87031bbed69a0f1.setContent(html_2f7b43085cfff83e9cbc940f5029538a);
+            
+        
+
+        marker_7a0b47d5cd64060d8de4bc5d6f14248f.bindPopup(popup_b1518c0aee135270b87031bbed69a0f1)
+        ;
+
+        
+    
+    
+            var marker_586ec27ddedf10704195f5fa31b16929 = L.marker(
+                [37.545930048, 127.076440078],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_d2127acbe7436fbdf67100de075cae73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_586ec27ddedf10704195f5fa31b16929.setIcon(icon_d2127acbe7436fbdf67100de075cae73);
+        
+    
+        var popup_eabb55be6a4419d904d46cbc96e18ae5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3e49ed03187a32f6e5cc569681a15737 = $(`<div id="html_3e49ed03187a32f6e5cc569681a15737" style="width: 100.0%; height: 100.0%;">         <div style="width: 210px; white-space: normal;">             4825. 한우 정육소 건대점         </div>         </div>`)[0];
+                popup_eabb55be6a4419d904d46cbc96e18ae5.setContent(html_3e49ed03187a32f6e5cc569681a15737);
+            
+        
+
+        marker_586ec27ddedf10704195f5fa31b16929.bindPopup(popup_eabb55be6a4419d904d46cbc96e18ae5)
+        ;
+
+        
+    
+    
+            var marker_7a5973dc03db2367c50a6adf1281c17d = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_184a60a193742110b89ffdf5492940c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a5973dc03db2367c50a6adf1281c17d.setIcon(icon_184a60a193742110b89ffdf5492940c0);
+        
+    
+        var popup_8c9d3dc2a5ee0ae1d9ecf05e4609b411 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_066f7b0f01afa3b51e0791abb8f979ac = $(`<div id="html_066f7b0f01afa3b51e0791abb8f979ac" style="width: 100.0%; height: 100.0%;">         <div style="width: 260px; white-space: normal;">             4826. 양순덕 전통 김치찌개&김치찜         </div>         </div>`)[0];
+                popup_8c9d3dc2a5ee0ae1d9ecf05e4609b411.setContent(html_066f7b0f01afa3b51e0791abb8f979ac);
+            
+        
+
+        marker_7a5973dc03db2367c50a6adf1281c17d.bindPopup(popup_8c9d3dc2a5ee0ae1d9ecf05e4609b411)
+        ;
+
+        
+    
+    
+            var poly_line_53e66795a466c414c26ebb80da7b61f0 = L.polyline(
+                [[37.542506765, 127.071145198], [37.54287278, 127.070829902], [37.543454297, 127.072018668], [37.544337537, 127.072407268], [37.545489718, 127.072998696], [37.54552279, 127.07352764], [37.544729716, 127.074826659], [37.546059816, 127.074418867], [37.545978639, 127.073988305], [37.545978639, 127.073988305], [37.545978639, 127.073988305], [37.545978639, 127.073988305], [37.545978639, 127.073988305], [37.545978639, 127.073988305], [37.546773767, 127.073504861], [37.547195356, 127.072860672], [37.547134775, 127.073088678], [37.547238294, 127.073426763], [37.547134959, 127.07345934], [37.547009582, 127.074347967], [37.546242448, 127.074959406], [37.546283279, 127.075353888], [37.54645904, 127.075604044], [37.545930048, 127.076440078], [37.545279402, 127.077315126]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var marker_859fff7d5eef8f5636256c1b8f8b5fd4 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_e2aff52f18f6f0207a24df59c26c5d26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_859fff7d5eef8f5636256c1b8f8b5fd4.setIcon(icon_e2aff52f18f6f0207a24df59c26c5d26);
+        
+    
+        var popup_23435bba92a5aff6aaade75d3fa75216 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_b2a912b139ed8c34bb79de61c798c7f5 = $(`<div id="html_b2a912b139ed8c34bb79de61c798c7f5" style="width: 100.0%; height: 100.0%;">         <div style="width: 240px; white-space: normal;">             4802. 서울 주해옥 돼지곱창전골         </div>         </div>`)[0];
+                popup_23435bba92a5aff6aaade75d3fa75216.setContent(html_b2a912b139ed8c34bb79de61c798c7f5);
+            
+        
+
+        marker_859fff7d5eef8f5636256c1b8f8b5fd4.bindPopup(popup_23435bba92a5aff6aaade75d3fa75216)
+        ;
+
+        
+    
+    
+            var marker_d27dbe99ef6d2b62ec21086526f00416 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_e03db23d3e7a7055d58c188c49d642db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d27dbe99ef6d2b62ec21086526f00416.setIcon(icon_e03db23d3e7a7055d58c188c49d642db);
+        
+    
+        var popup_e06c20441322e372cdf04c131773823d = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_36fcdec2c8785dbe163d17fa8bbf0f63 = $(`<div id="html_36fcdec2c8785dbe163d17fa8bbf0f63" style="width: 100.0%; height: 100.0%;">         <div style="width: 200px; white-space: normal;">             4803. 멘부리 건대직영점         </div>         </div>`)[0];
+                popup_e06c20441322e372cdf04c131773823d.setContent(html_36fcdec2c8785dbe163d17fa8bbf0f63);
+            
+        
+
+        marker_d27dbe99ef6d2b62ec21086526f00416.bindPopup(popup_e06c20441322e372cdf04c131773823d)
+        ;
+
+        
+    
+    
+            var marker_511ff5560e34e1ea8e6c39505ca12fd6 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_49d9a9cea257b721e0d23152a3d23aa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_511ff5560e34e1ea8e6c39505ca12fd6.setIcon(icon_49d9a9cea257b721e0d23152a3d23aa8);
+        
+    
+        var popup_c2fb24149b9c13cec7d15ad7a511e7f2 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_856ccbb9c4d2f6a65715bc433f570ae9 = $(`<div id="html_856ccbb9c4d2f6a65715bc433f570ae9" style="width: 100.0%; height: 100.0%;">         <div style="width: 270px; white-space: normal;">             4804. 영스톤(YOUNG STONE)         </div>         </div>`)[0];
+                popup_c2fb24149b9c13cec7d15ad7a511e7f2.setContent(html_856ccbb9c4d2f6a65715bc433f570ae9);
+            
+        
+
+        marker_511ff5560e34e1ea8e6c39505ca12fd6.bindPopup(popup_c2fb24149b9c13cec7d15ad7a511e7f2)
+        ;
+
+        
+    
+    
+            var marker_517b40129b29860a81bead8b16075e1a = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_b0ac42467a6f3c6bdc3cdb72d7d083c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_517b40129b29860a81bead8b16075e1a.setIcon(icon_b0ac42467a6f3c6bdc3cdb72d7d083c7);
+        
+    
+        var popup_8cfc39622bd8fd0b827b347d28741a5b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_51a31de71ee47a6c8341480750db7c45 = $(`<div id="html_51a31de71ee47a6c8341480750db7c45" style="width: 100.0%; height: 100.0%;">         <div style="width: 230px; white-space: normal;">             4805. 주식회사 스카이네트웍스         </div>         </div>`)[0];
+                popup_8cfc39622bd8fd0b827b347d28741a5b.setContent(html_51a31de71ee47a6c8341480750db7c45);
+            
+        
+
+        marker_517b40129b29860a81bead8b16075e1a.bindPopup(popup_8cfc39622bd8fd0b827b347d28741a5b)
+        ;
+
+        
+    
+    
+            var marker_26494ccf3948fcee62fa1bd176944b9e = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_b010793fc149b44760f9859991b161d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_26494ccf3948fcee62fa1bd176944b9e.setIcon(icon_b010793fc149b44760f9859991b161d0);
+        
+    
+        var popup_fdc929f30d62de9aed2c82eb5d510cbc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_885255bc5d36e97f4532ea524390f4b8 = $(`<div id="html_885255bc5d36e97f4532ea524390f4b8" style="width: 100.0%; height: 100.0%;">         <div style="width: 140px; white-space: normal;">             4806. 엘라또         </div>         </div>`)[0];
+                popup_fdc929f30d62de9aed2c82eb5d510cbc.setContent(html_885255bc5d36e97f4532ea524390f4b8);
+            
+        
+
+        marker_26494ccf3948fcee62fa1bd176944b9e.bindPopup(popup_fdc929f30d62de9aed2c82eb5d510cbc)
+        ;
+
+        
+    
+    
+            var marker_02bace0408e3e03c351f4655d5877467 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_b935e4a0a8c2f22ae134e52ca0492295 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_02bace0408e3e03c351f4655d5877467.setIcon(icon_b935e4a0a8c2f22ae134e52ca0492295);
+        
+    
+        var popup_29186c2b9d64589cdf5f398307b492b6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_de9427ede615c9ff5ba241051a74f8e5 = $(`<div id="html_de9427ede615c9ff5ba241051a74f8e5" style="width: 100.0%; height: 100.0%;">         <div style="width: 150px; white-space: normal;">             4807. 뽀끼뽀끼         </div>         </div>`)[0];
+                popup_29186c2b9d64589cdf5f398307b492b6.setContent(html_de9427ede615c9ff5ba241051a74f8e5);
+            
+        
+
+        marker_02bace0408e3e03c351f4655d5877467.bindPopup(popup_29186c2b9d64589cdf5f398307b492b6)
+        ;
+
+        
+    
+    
+            var marker_c4ab6adc29c7448310bc3370c8395446 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_82458eeb13077bad0e2ea2497b987baf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c4ab6adc29c7448310bc3370c8395446.setIcon(icon_82458eeb13077bad0e2ea2497b987baf);
+        
+    
+        var popup_76c27cb29bb49231380b6535d4e69077 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_6347b3403e92588850344bb5cb9d3d89 = $(`<div id="html_6347b3403e92588850344bb5cb9d3d89" style="width: 100.0%; height: 100.0%;">         <div style="width: 250px; white-space: normal;">             4808. 페르바코(PERBACCO)         </div>         </div>`)[0];
+                popup_76c27cb29bb49231380b6535d4e69077.setContent(html_6347b3403e92588850344bb5cb9d3d89);
+            
+        
+
+        marker_c4ab6adc29c7448310bc3370c8395446.bindPopup(popup_76c27cb29bb49231380b6535d4e69077)
+        ;
+
+        
+    
+    
+            var marker_4c25b33aef77985c49fe7c489399ef7d = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_edbf8edf1a0eec5c52cdaa5e52bc0467 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4c25b33aef77985c49fe7c489399ef7d.setIcon(icon_edbf8edf1a0eec5c52cdaa5e52bc0467);
+        
+    
+        var popup_48148d262f726a828759c8b45732b03b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3c48f97dee7bedfe612f1cb5573052f6 = $(`<div id="html_3c48f97dee7bedfe612f1cb5573052f6" style="width: 100.0%; height: 100.0%;">         <div style="width: 250px; white-space: normal;">             4809. 초신당 한우곱도리탕 광진점         </div>         </div>`)[0];
+                popup_48148d262f726a828759c8b45732b03b.setContent(html_3c48f97dee7bedfe612f1cb5573052f6);
+            
+        
+
+        marker_4c25b33aef77985c49fe7c489399ef7d.bindPopup(popup_48148d262f726a828759c8b45732b03b)
+        ;
+
+        
+    
+    
+            var marker_d6ee88d26b91f1c288a19aeb0eddc54d = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_11275cbc25a2ba5537beab36767d3363 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6ee88d26b91f1c288a19aeb0eddc54d.setIcon(icon_11275cbc25a2ba5537beab36767d3363);
+        
+    
+        var popup_0a6385cbfa9ef4d163f9df07f14111e5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_839f8542679ee6663d8d373c3021b03c = $(`<div id="html_839f8542679ee6663d8d373c3021b03c" style="width: 100.0%; height: 100.0%;">         <div style="width: 180px; white-space: normal;">             4810. 남산국밥(2)         </div>         </div>`)[0];
+                popup_0a6385cbfa9ef4d163f9df07f14111e5.setContent(html_839f8542679ee6663d8d373c3021b03c);
+            
+        
+
+        marker_d6ee88d26b91f1c288a19aeb0eddc54d.bindPopup(popup_0a6385cbfa9ef4d163f9df07f14111e5)
+        ;
+
+        
+    
+    
+            var marker_52523b76db5ca1fdb9266468c3de42a4 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_642cea721ba9ba02c7e9804373756f0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_52523b76db5ca1fdb9266468c3de42a4.setIcon(icon_642cea721ba9ba02c7e9804373756f0e);
+        
+    
+        var popup_e3869171f115f4144a8d0d67dd906b31 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3a947a06bbe2ed83088afecc0633e551 = $(`<div id="html_3a947a06bbe2ed83088afecc0633e551" style="width: 100.0%; height: 100.0%;">         <div style="width: 190px; white-space: normal;">             4811. 조선육회 건대점         </div>         </div>`)[0];
+                popup_e3869171f115f4144a8d0d67dd906b31.setContent(html_3a947a06bbe2ed83088afecc0633e551);
+            
+        
+
+        marker_52523b76db5ca1fdb9266468c3de42a4.bindPopup(popup_e3869171f115f4144a8d0d67dd906b31)
+        ;
+
+        
+    
+    
+            var marker_7fddcc7cba8577c4a284c61065c71b4f = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_dbc723dc51573b825c7f929a33a8d77b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7fddcc7cba8577c4a284c61065c71b4f.setIcon(icon_dbc723dc51573b825c7f929a33a8d77b);
+        
+    
+        var popup_c275abf887ee23096d1d187c867e100b = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_50acaf46c75e5368215ee5db74bb683e = $(`<div id="html_50acaf46c75e5368215ee5db74bb683e" style="width: 100.0%; height: 100.0%;">         <div style="width: 270px; white-space: normal;">             4812. 굴림샤브&콩국수 어린이대공원점         </div>         </div>`)[0];
+                popup_c275abf887ee23096d1d187c867e100b.setContent(html_50acaf46c75e5368215ee5db74bb683e);
+            
+        
+
+        marker_7fddcc7cba8577c4a284c61065c71b4f.bindPopup(popup_c275abf887ee23096d1d187c867e100b)
+        ;
+
+        
+    
+    
+            var marker_8cc8fc47cf9af31888df7be94c5a7486 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_d7cf734449a2edb9ba2bf03ace9c5f8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8cc8fc47cf9af31888df7be94c5a7486.setIcon(icon_d7cf734449a2edb9ba2bf03ace9c5f8c);
+        
+    
+        var popup_e7d4205fb17c58c30f90e7809ce4f704 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a3c0383fda15b0da8ffe46d6d21a35bd = $(`<div id="html_a3c0383fda15b0da8ffe46d6d21a35bd" style="width: 100.0%; height: 100.0%;">         <div style="width: 200px; white-space: normal;">             4813. 한식의품격 광진점         </div>         </div>`)[0];
+                popup_e7d4205fb17c58c30f90e7809ce4f704.setContent(html_a3c0383fda15b0da8ffe46d6d21a35bd);
+            
+        
+
+        marker_8cc8fc47cf9af31888df7be94c5a7486.bindPopup(popup_e7d4205fb17c58c30f90e7809ce4f704)
+        ;
+
+        
+    
+    
+            var marker_b958d2f2643f07d7110486f3f42dbfa7 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_bcc208088ee2432afe5553c173b9df9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b958d2f2643f07d7110486f3f42dbfa7.setIcon(icon_bcc208088ee2432afe5553c173b9df9b);
+        
+    
+        var popup_11b565a001edceb46d0e9ab3deceab15 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_d7d21c424bed610e511c9843bee487e5 = $(`<div id="html_d7d21c424bed610e511c9843bee487e5" style="width: 100.0%; height: 100.0%;">         <div style="width: 190px; white-space: normal;">             4814. 육식세끼 광진점         </div>         </div>`)[0];
+                popup_11b565a001edceb46d0e9ab3deceab15.setContent(html_d7d21c424bed610e511c9843bee487e5);
+            
+        
+
+        marker_b958d2f2643f07d7110486f3f42dbfa7.bindPopup(popup_11b565a001edceb46d0e9ab3deceab15)
+        ;
+
+        
+    
+    
+            var marker_d98c93b81c56625f8ff17a23fabc9c06 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_9c627bce66c8a431975fe02f19f50d53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d98c93b81c56625f8ff17a23fabc9c06.setIcon(icon_9c627bce66c8a431975fe02f19f50d53);
+        
+    
+        var popup_980e27f061eec8436fd2549409c16175 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_e8ca9c3a49d48acd90450aae429f2a4b = $(`<div id="html_e8ca9c3a49d48acd90450aae429f2a4b" style="width: 100.0%; height: 100.0%;">         <div style="width: 180px; white-space: normal;">             4815. 북촌소한마리탕         </div>         </div>`)[0];
+                popup_980e27f061eec8436fd2549409c16175.setContent(html_e8ca9c3a49d48acd90450aae429f2a4b);
+            
+        
+
+        marker_d98c93b81c56625f8ff17a23fabc9c06.bindPopup(popup_980e27f061eec8436fd2549409c16175)
+        ;
+
+        
+    
+    
+            var marker_2dc18ff6d271f5ee4c1e2bc44fec489c = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_ff11dddb97e3d0dfbc879492c65b66c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2dc18ff6d271f5ee4c1e2bc44fec489c.setIcon(icon_ff11dddb97e3d0dfbc879492c65b66c4);
+        
+    
+        var popup_c14313f3be0fcd481945e0ba0acfa0c4 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_667736668d4aacbd8a750bc7670a2fcb = $(`<div id="html_667736668d4aacbd8a750bc7670a2fcb" style="width: 100.0%; height: 100.0%;">         <div style="width: 230px; white-space: normal;">             4816. 샹츠마라 어린이대공원점         </div>         </div>`)[0];
+                popup_c14313f3be0fcd481945e0ba0acfa0c4.setContent(html_667736668d4aacbd8a750bc7670a2fcb);
+            
+        
+
+        marker_2dc18ff6d271f5ee4c1e2bc44fec489c.bindPopup(popup_c14313f3be0fcd481945e0ba0acfa0c4)
+        ;
+
+        
+    
+    
+            var marker_21be3b847a27273850ce2b7e088d1134 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_dd660c957b636d2cb24e6086358f3525 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_21be3b847a27273850ce2b7e088d1134.setIcon(icon_dd660c957b636d2cb24e6086358f3525);
+        
+    
+        var popup_197db375d0ab12e1dc5ee7877571e3d6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_70fd5175520bb4333a850a8145708f90 = $(`<div id="html_70fd5175520bb4333a850a8145708f90" style="width: 100.0%; height: 100.0%;">         <div style="width: 150px; white-space: normal;">             4817. 복복중식         </div>         </div>`)[0];
+                popup_197db375d0ab12e1dc5ee7877571e3d6.setContent(html_70fd5175520bb4333a850a8145708f90);
+            
+        
+
+        marker_21be3b847a27273850ce2b7e088d1134.bindPopup(popup_197db375d0ab12e1dc5ee7877571e3d6)
+        ;
+
+        
+    
+    
+            var marker_bb878cd021146c472f7915d54486c3a5 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_2eb62605814155cda5bf7854f15f554a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bb878cd021146c472f7915d54486c3a5.setIcon(icon_2eb62605814155cda5bf7854f15f554a);
+        
+    
+        var popup_a7449f897711140f3ca03f694f099d16 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_0e4e879cf64d70c0c3941a3da6c68c1c = $(`<div id="html_0e4e879cf64d70c0c3941a3da6c68c1c" style="width: 100.0%; height: 100.0%;">         <div style="width: 160px; white-space: normal;">             4818. 닭갈비 닭         </div>         </div>`)[0];
+                popup_a7449f897711140f3ca03f694f099d16.setContent(html_0e4e879cf64d70c0c3941a3da6c68c1c);
+            
+        
+
+        marker_bb878cd021146c472f7915d54486c3a5.bindPopup(popup_a7449f897711140f3ca03f694f099d16)
+        ;
+
+        
+    
+    
+            var marker_82df634823ab0ec4dce4f787351f7448 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_998437b389320c51d61811b59b8d0d64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_82df634823ab0ec4dce4f787351f7448.setIcon(icon_998437b389320c51d61811b59b8d0d64);
+        
+    
+        var popup_cc8deb9e08bc8c2b5e098b2a3e66e1a7 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_a80bdbbad187203ae2f20a422bc9dba3 = $(`<div id="html_a80bdbbad187203ae2f20a422bc9dba3" style="width: 100.0%; height: 100.0%;">         <div style="width: 210px; white-space: normal;">             4819. 탕화쿵푸마라탕(2)         </div>         </div>`)[0];
+                popup_cc8deb9e08bc8c2b5e098b2a3e66e1a7.setContent(html_a80bdbbad187203ae2f20a422bc9dba3);
+            
+        
+
+        marker_82df634823ab0ec4dce4f787351f7448.bindPopup(popup_cc8deb9e08bc8c2b5e098b2a3e66e1a7)
+        ;
+
+        
+    
+    
+            var marker_9ba124169464caddd5965bedd515ec22 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_ee6c4a4f11e7b1aad9412a5ce05e76ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9ba124169464caddd5965bedd515ec22.setIcon(icon_ee6c4a4f11e7b1aad9412a5ce05e76ef);
+        
+    
+        var popup_87272c9cdfb2f3c792fc8280693f69c5 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_7368d990a78e2b4f50086b4c56aae682 = $(`<div id="html_7368d990a78e2b4f50086b4c56aae682" style="width: 100.0%; height: 100.0%;">         <div style="width: 140px; white-space: normal;">             4820. 마라봉         </div>         </div>`)[0];
+                popup_87272c9cdfb2f3c792fc8280693f69c5.setContent(html_7368d990a78e2b4f50086b4c56aae682);
+            
+        
+
+        marker_9ba124169464caddd5965bedd515ec22.bindPopup(popup_87272c9cdfb2f3c792fc8280693f69c5)
+        ;
+
+        
+    
+    
+            var marker_2dc9ff0d319728757aa62740e27d3ade = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_08dc0d742fab9162cec20ca5b79423bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2dc9ff0d319728757aa62740e27d3ade.setIcon(icon_08dc0d742fab9162cec20ca5b79423bb);
+        
+    
+        var popup_a9ff65b474ca275013f99f9827e305bc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_3f8f214302c38c06de5da329c440c895 = $(`<div id="html_3f8f214302c38c06de5da329c440c895" style="width: 100.0%; height: 100.0%;">         <div style="width: 170px; white-space: normal;">             4821. 맥주 컴퍼니         </div>         </div>`)[0];
+                popup_a9ff65b474ca275013f99f9827e305bc.setContent(html_3f8f214302c38c06de5da329c440c895);
+            
+        
+
+        marker_2dc9ff0d319728757aa62740e27d3ade.bindPopup(popup_a9ff65b474ca275013f99f9827e305bc)
+        ;
+
+        
+    
+    
+            var marker_7033c6eefc50961bf9d8c3758f0b6f83 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_2e22a844a7a3dab308edf0d5a92656b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7033c6eefc50961bf9d8c3758f0b6f83.setIcon(icon_2e22a844a7a3dab308edf0d5a92656b5);
+        
+    
+        var popup_7a3f926e3d88d6ce99a74c7854709d8f = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_2fdea569f3d474caa79b64101f8ca89f = $(`<div id="html_2fdea569f3d474caa79b64101f8ca89f" style="width: 100.0%; height: 100.0%;">         <div style="width: 290px; white-space: normal;">             4822. 바 에이튠즈(BAR:ATUNES)         </div>         </div>`)[0];
+                popup_7a3f926e3d88d6ce99a74c7854709d8f.setContent(html_2fdea569f3d474caa79b64101f8ca89f);
+            
+        
+
+        marker_7033c6eefc50961bf9d8c3758f0b6f83.bindPopup(popup_7a3f926e3d88d6ce99a74c7854709d8f)
+        ;
+
+        
+    
+    
+            var marker_20f5e87a34421bcdb84cb91dee553223 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_33e2c3ecbfe785f55b3eea8c15d863f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_20f5e87a34421bcdb84cb91dee553223.setIcon(icon_33e2c3ecbfe785f55b3eea8c15d863f9);
+        
+    
+        var popup_e7d11d8a003220700be2bd51a8de2668 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_5aad5846764f5e083d1dbb2cec8e0066 = $(`<div id="html_5aad5846764f5e083d1dbb2cec8e0066" style="width: 100.0%; height: 100.0%;">         <div style="width: 170px; white-space: normal;">             4823. 올푸드 포유         </div>         </div>`)[0];
+                popup_e7d11d8a003220700be2bd51a8de2668.setContent(html_5aad5846764f5e083d1dbb2cec8e0066);
+            
+        
+
+        marker_20f5e87a34421bcdb84cb91dee553223.bindPopup(popup_e7d11d8a003220700be2bd51a8de2668)
+        ;
+
+        
+    
+    
+            var marker_5b49d8b45727e3102894ed4c6d428260 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_77021bde68729272aa70c41db6027cef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5b49d8b45727e3102894ed4c6d428260.setIcon(icon_77021bde68729272aa70c41db6027cef);
+        
+    
+        var popup_6f3014bd0528bd913a87ed6f7a3b6ffc = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_8695b4710c11e2c160db35d29fc623dc = $(`<div id="html_8695b4710c11e2c160db35d29fc623dc" style="width: 100.0%; height: 100.0%;">         <div style="width: 200px; white-space: normal;">             4824. 우동가조쿠 건대점         </div>         </div>`)[0];
+                popup_6f3014bd0528bd913a87ed6f7a3b6ffc.setContent(html_8695b4710c11e2c160db35d29fc623dc);
+            
+        
+
+        marker_5b49d8b45727e3102894ed4c6d428260.bindPopup(popup_6f3014bd0528bd913a87ed6f7a3b6ffc)
+        ;
+
+        
+    
+    
+            var marker_0960fab61c6a0f3eeed1975ebcde09f9 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_b86d93148840696a8395ae9769d13c63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0960fab61c6a0f3eeed1975ebcde09f9.setIcon(icon_b86d93148840696a8395ae9769d13c63);
+        
+    
+        var popup_9b5e0747c4bd2217f91809f62de29ea6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_946fcfac54100652397e2e3aac62eb58 = $(`<div id="html_946fcfac54100652397e2e3aac62eb58" style="width: 100.0%; height: 100.0%;">         <div style="width: 210px; white-space: normal;">             4825. 한우 정육소 건대점         </div>         </div>`)[0];
+                popup_9b5e0747c4bd2217f91809f62de29ea6.setContent(html_946fcfac54100652397e2e3aac62eb58);
+            
+        
+
+        marker_0960fab61c6a0f3eeed1975ebcde09f9.bindPopup(popup_9b5e0747c4bd2217f91809f62de29ea6)
+        ;
+
+        
+    
+    
+            var marker_1aed7e9cf1e2d6047f94f2ef0f4bd3b2 = L.marker(
+                [37.545279402, 127.077315126],
+                {}
+            ).addTo(map_68b41ba3a13d83d08ab1edb59e0cd349);
+        
+    
+            var icon_b5f2526f817d6dfd001939b0afda7a39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1aed7e9cf1e2d6047f94f2ef0f4bd3b2.setIcon(icon_b5f2526f817d6dfd001939b0afda7a39);
+        
+    
+        var popup_cc5095464c625921721f3e319add6d40 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9c710c425e592e20899f90c9ddb09256 = $(`<div id="html_9c710c425e592e20899f90c9ddb09256" style="width: 100.0%; height: 100.0%;">         <div style="width: 260px; white-space: normal;">             4826. 양순덕 전통 김치찌개&김치찜         </div>         </div>`)[0];
+                popup_cc5095464c625921721f3e319add6d40.setContent(html_9c710c425e592e20899f90c9ddb09256);
+            
+        
+
+        marker_1aed7e9cf1e2d6047f94f2ef0f4bd3b2.bindPopup(popup_cc5095464c625921721f3e319add6d40)
+        ;
+
+        
+    
+</script>
+</html>
